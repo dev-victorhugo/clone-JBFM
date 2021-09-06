@@ -1,0 +1,128 @@
+:root{
+    --blue: rgb(25,56,110);
+    --white: #f1f1f1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+.l-cont{
+    width: 20vw;
+    height: 100vh;
+    border-radius: 0 50px 50px 0;
+    background: linear-gradient(rgba(25, 56, 110, 0.8), rgba(25, 56, 110, 0.8)) , url("bg01.png") no-repeat right;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.l-cont a{
+    color: white;
+    font-weight: 800;
+}
+
+.logo{
+    margin-bottom: 3rem;
+}
+
+.logo img{
+    height: 4.5rem;
+}
+
+.classic{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 2rem;
+    font-weight: 100;
+    
+}
+
+.classic img{
+    height: 3rem;
+}
+
+.menu:first-child{
+    border-top: 3px solid white;
+}
+
+
+.menu{
+    padding: 1rem;
+    border-bottom: 3px solid white;
+    font-weight: bolder;
+}
+
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.social{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.app{
+    display: flex;
+}
+
+.app img{
+    width: 80%;
+}
+
+.youtube{
+    width: 10%;
+}
+
+.main-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    padding: 1rem;
+}
+
+.playing-title{
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative;
+    letter-spacing: .5rem;
+    color: var(--blue);
+    margin-bottom: 1.5rem;
+}
+
+.playing-title::before{
+    content: '';
+    width: 50%;
+    height: 10px;
+    background: var(--blue);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    border-radius: 50px;
+}
+
+.cover-box{
+    width: 200px;
+    height: 200px;
+    background: red
+}
